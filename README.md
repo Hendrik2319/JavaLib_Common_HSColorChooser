@@ -1,6 +1,6 @@
 # JavaLib_Common_HSColorChooser
 The `JavaLib_Common_*` libraries contains all code snippets, classes and concepts, I want to reuse over more than one project.  
-In `JavaLib_Common_HSColorChooser` contains a replacement for the standard javax.swing.JColorChooser.  
+`JavaLib_Common_HSColorChooser` contains a replacement for the standard javax.swing.JColorChooser.  
 
 `JavaLib_Common_HSColorChooser` is an extract of `JavaLib_Common`.  
 At first and for a long time I've used SVN for versioning and all these extracts were made via `SVN externals` (separate files or whole folders).

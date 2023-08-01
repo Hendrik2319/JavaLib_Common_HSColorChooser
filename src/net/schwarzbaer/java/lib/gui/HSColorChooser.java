@@ -73,7 +73,7 @@ public final class HSColorChooser {
 			this(parent, title, repeatedUseOfDialogObject, color, null);
 		}
 		public ColorDialog(Window parent, String title, boolean repeatedUseOfDialogObject, Color color, UserdefinedColors userdefinedColors) {
-			super(parent, title);
+			super(parent, title, ModalityType.APPLICATION_MODAL);
 			this.parent = parent;
 			this.repeatedUseOfDialogObject = repeatedUseOfDialogObject;
 			mainPanel = new MainPanel(color, this, null, userdefinedColors);

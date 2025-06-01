@@ -50,7 +50,7 @@ public final class HSColorChooser {
 		BELOW_PARENT
 	}
 	
-	public static JButton createColorbutton(Color initialColor, Window dialogParent, String dialogTitle, Position dialogPosition, ColorReceiver colorReceiver) {
+	public static ColorButton createColorbutton(Color initialColor, Window dialogParent, String dialogTitle, Position dialogPosition, ColorReceiver colorReceiver) {
 		ColorButton button = new ColorButton(initialColor);
 		button.addActionListener(e->{
 			Color color = showDialog(dialogParent, dialogTitle, button.getColor(), dialogPosition);
@@ -547,7 +547,7 @@ public final class HSColorChooser {
 		
 	}
 
-	private static class ColorButton extends JButton {
+	public static class ColorButton extends JButton {
 		private static final long serialVersionUID = -9038988600993272882L;
 		
 		private ColorButtonIcon icon;
